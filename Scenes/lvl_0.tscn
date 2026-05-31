@@ -5801,7 +5801,7 @@ sources/1 = SubResource("TileSetAtlasSource_3la5b")
 [node name="Lvl_0" type="Node2D" unique_id=1077948002]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=2105210168]
-tile_map_data = PackedByteArray("AAABAAQAAQABAAEAAAAJAAQAAQABAAEAAAARAAQAAQABAAEAAAAZAAQAAQABAAEAAAAhAAQAAQABAAEAAAApAAQAAQABAAEAAAA=")
+tile_map_data = PackedByteArray("AAABAAQAAQABAAEAAAAJAAQAAQABAAEAAAARAAQAAQABAAEAAAAZAAQAAQABAAEAAAAhAAQAAQABAAEAAAApAAQAAQABAAEAAAA8AAUAAQAAAAEAAAA=")
 tile_set = SubResource("TileSet_3tiww")
 
 [node name="Player" parent="." unique_id=1358090736 instance=ExtResource("2_46sb4")]
