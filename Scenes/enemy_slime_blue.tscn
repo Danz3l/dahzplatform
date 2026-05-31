@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://c3dc54dwb25fc"]
+
+[ext_resource type="Texture2D" uid="uid://cwr4g5m27dvfl" path="res://Assets/kenney_platformer-pack-remastered/Spritesheets/spritesheet_enemies.png" id="1_bjo06"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1f0kj"]
+atlas = ExtResource("1_bjo06")
+region = Rect2(128, 130, 128, 130)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_afpow"]
+atlas = ExtResource("1_bjo06")
+region = Rect2(128, 520, 128, 130)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_287tu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1f0kj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_afpow")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 8.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0830c"]
+radius = 28.0
+height = 96.0
+
+[node name="enemy_slime_blue" type="AnimatedSprite2D" unique_id=2108221916]
+sprite_frames = SubResource("SpriteFrames_287tu")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.016256042
+offset = Vector2(0, -65)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1051285350]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1349830655]
+position = Vector2(1, -29)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_0830c")
